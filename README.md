@@ -160,8 +160,10 @@ Then add a title and description to your pull request that explains your preciou
 
 ## Awesome contributors :star_struck:
 <a href="https://github.com/kishanrajput23/Hacktoberfest_2021/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=kishanrajput23/Hacktoberfest_2021" />
+  <img src="https://contrib.rocks/image?repo=kishanrajput23/Hacktoberfest_2021" />
 </a>
+
+Made with [contributors-img](https://contrib.rocks).
 
 Made with [contributors-img](https://contributors-img.web.app).
 
