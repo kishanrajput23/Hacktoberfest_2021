@@ -1,0 +1,57 @@
+                                                                                                                                            *,
+                                                                                                                                            * ::before,
+                                                                                                                                            * :after {
+                                                                                                                                                padding: 0;
+                                                                                                                                                margin: 0;
+                                                                                                                                                box-sizing: border-box;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            body {
+                                                                                                                                                background-image: url(uraraka.gif);
+                                                                                                                                                background-size: cover
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .caixa {
+                                                                                                                                                background-color: #D98292;
+                                                                                                                                                padding: 60px 0;
+                                                                                                                                                width: 40%;
+                                                                                                                                                min-width: 500px;
+                                                                                                                                                position: absolute;
+                                                                                                                                                transform: translate(-50%, -50%);
+                                                                                                                                                top: 50%;
+                                                                                                                                                left: 50%;
+                                                                                                                                                border-radius: 10px;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .displaytempo {
+                                                                                                                                                position: relative;
+                                                                                                                                                width: 110%;
+                                                                                                                                                background-color: #591C16;
+                                                                                                                                                background: linear-gradient(#6A4243, #6D2E27, #805861);
+                                                                                                                                                left: -5%;
+                                                                                                                                                font-family: monospace;
+                                                                                                                                                font-size: 40px;
+                                                                                                                                                color: #fff;
+                                                                                                                                                padding: 40px 0;
+                                                                                                                                                display: flex;
+                                                                                                                                                align-items: center;
+                                                                                                                                                justify-content: space-around;
+                                                                                                                                                border-radius: 5px;
+                                                                                                                                                box-shadow: 0 0 20px #591C16;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .botoes {
+                                                                                                                                                width: 80%;
+                                                                                                                                                margin: 60px auto 0 auto;
+                                                                                                                                                display: flex;
+                                                                                                                                                justify-content: space-around
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .botoes button {
+                                                                                                                                                padding: 10px 20px;
+                                                                                                                                                background-color: #D98292;
+                                                                                                                                                color: #591C16;
+                                                                                                                                                border-radius: 5px;
+                                                                                                                                                font-size: 18px;
+                                                                                                                                                cursor: pointer;
+                                                                                                                                            }
