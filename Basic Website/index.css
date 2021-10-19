@@ -23,7 +23,12 @@ body {
 
 /* Style the top navigation bar */
 .navbar {
+  width: 100%;
   overflow: hidden;
+  background-color: #333;
+}
+
+.nav-bg {
   background-color: #333;
 }
 
@@ -40,6 +45,7 @@ body {
 /* Right-aligned link */
 .navbar a.right {
   float: right;
+  margin-right: 0;
 }
 
 /* Change color on hover */
@@ -52,6 +58,8 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
+  width: 1140px;
+  margin: 0 auto;
 }
 
 /* Create two unequal columns that sits next to each other */
@@ -71,6 +79,10 @@ body {
   background-color: white;
   padding: 20px;
   background: #ddd;
+}
+
+.main-bg {
+  background-color: #ddd;
 }
 
 /* Fake image, just for this example */
@@ -105,6 +117,7 @@ p {
   margin-top: 80px;
 }
 .thankyou {
+  width: 100%;
   font-size: 60px;
-  padding-left: 50px;
+  text-align: center;
 }
