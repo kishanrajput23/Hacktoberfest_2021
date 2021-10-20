@@ -65,17 +65,20 @@ body {
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-  flex: 30%;
+  flex: 50%;
   background-color: #f1f1f1;
   padding: 20px;
   background: #ddd;
 }
-.ShortNote {
+.side p {
   margin-top: 80px;
+  width: 60%;
+  text-align: justify;
+  line-height: 20px;
 }
 /* Main column */
 .main {
-  flex: 70%;
+  flex: 50%;
   background-color: white;
   padding: 20px;
   background: #ddd;
@@ -89,7 +92,7 @@ body {
 .fakeimg {
   background-color: transparent;
   width: 100%;
-  padding: 20px;
+  padding-top: 12px;
 }
 
 /* Footer */
