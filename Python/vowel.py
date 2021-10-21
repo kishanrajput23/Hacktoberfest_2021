@@ -1,9 +1,9 @@
 
 text = input("Enter text: ")
-mod = ""
+res = ""
 for x in text:
     if x in "aeiouAIEOU":
-        mod+="*"
+        res+="*"
     else:
-        mod+=x
-print('Modified text: ',mod)
+        res+=x
+print('Modified text: ',res)
