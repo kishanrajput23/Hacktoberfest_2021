@@ -65,17 +65,35 @@ body {
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-  flex: 50%;
+  flex: 46%;
   background-color: #f1f1f1;
   padding: 20px;
-  background: #ddd;
+  background: rgb(255, 255, 255);
+  /* border: 1px solid #333 ; */
+  margin: 20px 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px #00000049;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
+
 .side p {
   margin-top: 80px;
   width: 60%;
   text-align: justify;
   line-height: 20px;
 }
+
+.side img {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
 /* Main column */
 .main {
   flex: 50%;
@@ -85,7 +103,7 @@ body {
 }
 
 .main-bg {
-  background-color: #ddd;
+  background-color: rgb(228, 228, 228);
 }
 
 /* Fake image, just for this example */
