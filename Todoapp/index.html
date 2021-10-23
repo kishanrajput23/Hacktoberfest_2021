@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" >
+    <script>
+      function function1(){
+      var a=document.getElementById('darkmode');
+      if(a.classList.contains('fa-moon'))
+      {
+        document.body.style.background="black";
+        document.body.style.color="white";
+        $('#darkmode').toggleClass('fa-moon fa-sun');
+      }
+      else {
+        document.body.style.background="transparent";
+        document.body.style.color="#636c72";
+        $('#darkmode').toggleClass('fa-moon fa-sun');
+      }
+   }
+   </script>
+    <title>Todo List</title>
+    <script src = "script.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <nav style="background:#fcf8e8;" class="container-fluid navbar navbar-light bg-faded fixed-top navbar-expand-lg">
+    <a class="navbar-brand " href="#"><img src="img/index.png" alt="Todo-logo" height="45" width="60"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation" name="button"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse " id="navbar1">
+          <h1 style="font-weight:bold; text-align:center; color:black;">&nbspTODOS&nbsp</h1>
+          <span>
+            <div class="bg-transparent border-left-0 d-none d-lg-block"><i class="fas fa-tasks fa-2x" style="color:black;"></i></div>
+          </span>
+          <div class="col-lg-7">
+          </div>
+          <div class="col-lg-6 ml-lg-auto">
+            <ul class="nav navbar-nav navbar-left">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> HOME</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#todos"><span class="fa fa-list fa-lg"></span>  LIST-TODOS</a></li>
+            </ul>
+          </div>
+        </div>
+  </nav>
+
+  <nav aria-label="breadcrumb" class="container" style="margin-top:71px;">
+      <div class="row row-content">
+      <ul class="breadcrumb col-12" >
+          <li class="breadcrumb-item active">Home</li>
+          <li class="breadcrumb-item "><a href="#todos">List all todos</a></li>
+          <li class="ml-auto"><i id="darkmode" onclick="function1()" class="fa fa-moon" aria-hidden="true"></i></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class = "container mt-4">
+      <div class="col-12">
+        <label id = "lblsuccess" class = "text-success" style = "display: none;"></label>
+          <form role="form" id = "addForm" >
+             <div class="form-group row row-content">
+              <label for="item">TODO TITLE</label>
+              <input  class="form-control" id="item" type="text" onkeyup="toggleButton(this,'submit')" ></input>
+            </div>
+            <div class="form-group row row-content">
+              <label for="comment2">TODO DESCRIPTION</label>
+              <textarea  class="form-control" id="comment2"></textarea>
+            </div>
+            <div class="form-group row row-content">
+              <label for="comment3">TODO PRIORTY</label>
+              <input type="number"  class="form-control" id="comment3"></input>
+            </div>
+            <div class="form-group row row-content">
+              <input class="btn btn-outline-primary " style="margin:0 auto; display:block;" id="submit" type="submit" value="ADD" disabled></input>
+            </div>
+          </form>
+      </div>
+
+  <hr>
+
+        <h2 class = "mt-5" id="todos" style="font-weight:bold;">TASKS</h2>
+
+        <form id = "addForm" style="color:black;">
+            <ul class = "card-columns" id = "items"></ul>
+        </form>
+    </div>
+    <footer style="background:#c6ebc9;">
+        <div class="container-fluid">
+          <div class="row row-content">
+            <div style="margin:50px 0px 20px 0px;" class="col-md-6 text-center">
+              <blockquote style="font-style:italic;" class="blockquote text-right">
+                <p style="color:black;">"Better three hours too soon than a minute too late."</p>
+                <footer class="blockquote-footer">William Shakespeare</footer>
+              </blockquote>
+            </div>
+            <div class="col-md-6 text-center">
+              <p style="margin-top:90px; font-style:italic;" class="text-secondary">Ganapriya Kheersagar</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
