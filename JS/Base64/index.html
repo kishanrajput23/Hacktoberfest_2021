@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Base64 Encoder Decoder</title>
+    <!-- TailwindCSS -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Quicksand", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <div class="container mx-auto my-12 space-y-8 px-4">
+      <h1 class="font-bold text-3xl text-center">Base64 Encoder Decoder</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="">
+          <div
+            class="
+              flex flex-row
+              items-center
+              justify-between
+              bg-blue-400
+              px-4
+              py-2
+              rounded-t-md
+              text-white text-xl
+            "
+          >
+            <h1 class="font-bold">Encoder</h1>
+            <div class="space-x-4">
+              <button type="button" class="hover:text-blue-700" title="Paste" onclick="paste('encoder')">
+                <i class="fas fa-paste"></i> Paste
+              </button>
+              <button type="button" class="hover:text-blue-700" title="Copy" onclick="copy('encoder')">
+                <i class="fas fa-copy"></i> Copy
+              </button>
+            </div>
+          </div>
+          <textarea
+          id='encoder'
+            class="
+              w-full
+              border
+              shadow
+              rounded-b-md
+              h-64
+              px-4
+              py-3
+              outline-none
+            "
+            placeholder="Type here.."
+          ></textarea>
+        </div>
+        <div class="">
+          <div
+            class="
+              flex flex-row
+              items-center
+              justify-between
+              bg-blue-400
+              px-4
+              py-2
+              rounded-t-md
+              text-white text-xl
+            "
+          >
+            <h1 class="font-bold">Decoder</h1>
+            <div class="space-x-4">
+              <button type="button" class="hover:text-blue-700" title="Paste" onclick="paste('decoder')">
+                <i class="fas fa-paste"></i> Paste
+              </button>
+              <button type="button" class="hover:text-blue-700" title="Copy" onclick="copy('decoder')">
+                <i class="fas fa-copy"></i> Copy
+              </button>
+            </div>
+          </div>
+          <textarea
+          id='decoder'
+            class="
+              w-full
+              border
+              shadow
+              rounded-b-md
+              h-64
+              px-4
+              py-3
+              outline-none
+            "
+            placeholder="Type here.."
+          ></textarea>
+        </div>
+      </div>
+    </div>
+    <footer class="absolute bottom-0 left-0 right-0 py-8">
+      <div class="container mx-auto text-right">
+        <span
+          >Create with <i class="fas fa-heart text-red-600"></i> by
+          <a href="https://amusfq.my.id" target="_blank" rel="noopener" class='font-bold text-blue-600'>amusfq</a></span
+        >
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
