@@ -1,0 +1,40 @@
+body{
+    text-align: center;
+    background-color:rgb(54, 72, 90);
+}
+.hi
+{
+    color: rgb(194, 8, 231);
+}
+
+img{
+    border: 8px solid;
+}
+
+.name
+{
+    color: rgb(0, 247, 255);
+}
+
+
+
+.country
+{
+    font-style: italic;
+}
+.orange
+{
+    color: orangered;
+}
+.blue
+{
+    color: rgb(0, 225, 255);
+}
+.green
+{
+    color: rgb(23, 218, 23);
+}
+.white
+{
+    color: white;
+}
