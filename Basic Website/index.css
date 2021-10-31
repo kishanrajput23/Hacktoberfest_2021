@@ -142,3 +142,21 @@ p {
   font-size: 60px;
   text-align: center;
 }
+
+.first{
+  color: rgb(147, 44, 216);
+  font-family: cursive;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: italic  ;
+}
+.first::first-letter{
+  text-transform: uppercase;
+  color: green;
+}
+h1,h2,h5,p{
+  cursor: default;
+}
+
