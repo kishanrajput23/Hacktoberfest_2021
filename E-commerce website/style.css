@@ -130,6 +130,41 @@ h4{
     color: #ff523b;
 }
 
+
+.anchor{
+    transition: all .45s linear;
+}
+.anchor:hover, .anchor1{
+    text-decoration: underline;
+    color: rgb(42, 99, 204);
+}
+.anchor1{
+    cursor: default;
+}
+.first{
+    color: #ff523b;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    transition: all .45s ease-out;
+}
+.second{
+    color: #ff523b;
+}
+/* .first:hover{
+    letter-spacing:4px;
+    padding-left: 4px;
+} */
+.first_heading:hover>.first{
+    letter-spacing:4px;
+    padding-left: 10px;
+}
+.first_heading{
+    cursor: default;
+}
+.first_para{
+    cursor: default;
+}
+
 /*----------- Offer ------------*/
 
 
