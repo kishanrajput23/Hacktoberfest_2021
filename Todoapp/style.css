@@ -5,3 +5,45 @@
 .list-group-item{
   color:black;
 }
+.img{
+  cursor: default;
+}
+.heading{
+  cursor: default;
+}
+.home{
+  cursor:pointer;
+  transition: all .3s ease-in;
+}
+.home:hover{
+  /* width: 2px; */
+  letter-spacing: .8px;
+  text-decoration: underline;
+  /* margin-left: 2px; */
+}
+.button{
+  width: 80px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  border-radius: 15px;
+  border-width: 2px;
+}
+::placeholder{
+  font-style: italic;
+  letter-spacing: 1px;
+  font-family: monospace;
+}
+.active{
+  cursor: default;
+}
+.fa-moon{
+  transition: all .4s ease-out;
+}
+.fa-moon:hover{
+  color: white;
+  filter: drop-shadow(1px 1px 7px rgba(0,0,0,1));
+}
+.cur{
+  cursor: default;
+}
